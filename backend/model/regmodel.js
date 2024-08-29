@@ -91,15 +91,15 @@ sequelize.sync ()
     console.log("not synced");
 })
 
-sequelize.drop()
-    .then(() => {
-        console.log('Table dropped');
-        return sequelize.sync();  // Recreate the table
-    })
-    .then(() => {
-        console.log('Table recreated');
-    })
-    .catch((err) => {
-        console.error('Error:', err);
-    });
+// sequelize.drop()
+//     .then(() => {
+//         console.log('Table dropped');
+//         return sequelize.sync();  // Recreate the table
+//     })
+//     .then(() => {
+//         console.log('Table recreated');
+//     })
+//     .catch((err) => {
+//         console.error('Error:', err);
+//     });
 module.exports=regg;
